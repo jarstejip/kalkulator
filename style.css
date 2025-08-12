@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container kalkulator */
+.calculator {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+/* Input number */
+input[type="number"] {
+    width: 120px;
+    padding: 10px;
+    margin: 8px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #74ebd5;
+    outline: none;
+}
+
+/* Tombol */
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    background: #74ebd5;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background: #4fb2a7;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Hasil */
+#hasil {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
